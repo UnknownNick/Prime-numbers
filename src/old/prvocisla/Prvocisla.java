@@ -1,6 +1,7 @@
 /*
  * totally free :D
  */
+package prvocisla;
 import java.util.*;
 import java.io.*;
 
@@ -73,15 +74,13 @@ static FileOutputStream fw;
             for(int u = 1; /*p[u] != 0*/ ; u++ ){
                 
                 if(p[u]==0){
-                //System.out.println(i + " uklada jako " + p[u] + " na " + u);
                 p[u] = i;
                 break;
                 }
                 
                 if(i != p[u] & i % p[u] == 0){
-                    //System.out.print(i + " je  delitelne " + p[u] + ";\n");
                     break;
-                }//else System.out.print(i + " neni delitelne " + p[u] + " " + u + " ;\n");
+                }
                 
             }
         }
@@ -101,15 +100,13 @@ static FileOutputStream fw;
             for(int u = 1; u <= amount ; u++ ){
                 
                 if(p[u]==0){
-                //System.out.println(i + " uklada jako " + p[u] + " na " + u);
                 p[u] = i;
                 break;
                 }
                 
                 if(i != p[u] & i % p[u] == 0){
-                    //System.out.print(i + " je  delitelne " + p[u] + ";\n");
                     break;
-                }//else System.out.print(i + " neni delitelne " + p[u] + " " + u + " ;\n");
+                }
                 
             }
         }
